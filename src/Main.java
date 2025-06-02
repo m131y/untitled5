@@ -1,11 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        int number = -1;
+        int number = 0;
 
         if (number > 0) {
-            System.out.println("number는 0보다 큽니다.");
+            System.out.println("number은 양수입니다.");
+        } else if (number < 0) {
+            System.out.println("number은 음수입니다.");
         } else {
-            System.out.println("number는 0보다 작습니다.");
+            System.out.println("number는 0입니다.");
         }
     }
 }
