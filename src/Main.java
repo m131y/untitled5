@@ -1,11 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        for (int number = 1; number <= 9; number++) {
-            System.out.println(number + "단 시작");
-            for (int i = 1; i <= 9; i++) {
-                System.out.println(number + " x " + i + " = " + (number * i));
+        boolean a = true;
+        int b = 1;
+
+        while (a) {
+            System.out.println(b);
+            b++;
+
+            if(b > 100) {
+                a = false;
             }
-            System.out.println(number + "단 끝");
         }
+
     }
 }
