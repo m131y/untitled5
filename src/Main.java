@@ -1,16 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        boolean a = true;
-        int b = 1;
-
-        while (a) {
-            System.out.println(b);
-            b++;
-
-            if(b > 100) {
-                a = false;
+        for (int i = 1; i <= 1000; i++) {
+            if(i % 2 != 0 || i % 3 != 0) {
+                if (i == 100 ) {
+                    break;
+                }
+                continue;
             }
+            System.out.println(i);
         }
-
     }
 }
