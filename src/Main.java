@@ -1,16 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 13;
-        int max;
+        String message = "Hello, Java!";
 
-        //int max = (a > b) ? a : b;
-
-        if (a > b) {
-            max = a;
-        } else {
-            max = b;
+        for (int i = 0; i < message.length(); i++) {
+            System.out.println(i);
+            if (message.charAt(i) == 'l') {
+                break;
+            }
         }
-        System.out.println(max);
     }
 }
